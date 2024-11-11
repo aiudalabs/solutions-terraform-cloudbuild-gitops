@@ -15,7 +15,7 @@
 
 terraform {
   backend "gcs" {
-    bucket = "PROJECT_ID-tfstate"
+    bucket = "aiuda-labs-dev-tfstate"
     prefix = "env/prod"
   }
 }
