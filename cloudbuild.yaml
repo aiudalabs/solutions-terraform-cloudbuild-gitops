@@ -27,13 +27,15 @@ steps:
 
 - id: 'tf init'
   name: 'hashicorp/terraform:1.9'
-  script: terraform init
+  entrypoint: 'sh'
+  args: ["cd environments/dev", "terraform init"]
 
 
 # [START tf-plan]
 - id: 'tf plan'
   name: 'hashicorp/terraform:1.9'
-  script: terraform plan
+  entrypoint: 'sh'
+  args: ["cd environments/dev", "terraform plan"]
 # [END tf-plan]
 
 # [START tf-apply]
