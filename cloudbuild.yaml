@@ -28,7 +28,7 @@ steps:
 - id: 'tf init'
   name: 'hashicorp/terraform:1.9'
   entrypoint: 'sh'
-  args: ["cd environments/dev", "terraform init"]
+  args: ["ls"]
 
 
 # [START tf-plan]
